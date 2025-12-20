@@ -66,7 +66,7 @@ async function generateCSVs(){
     data.forEach(d=>{
       const spec = d.Special?.split(',').map(x=>x.trim()).join('|')||'';
       const cons = d.Consolation?.split(',').map(x=>x.trim()).join('|')||'';
-      lines.push(\`\${d.Date},\${d.Company},\${d.First},\${d.Second},\${d.Third},\${spec},\${cons}\`);
+      lines.push(`${d.Date},${d.Company},${d.First},${d.Second},${d.Third},${spec},${cons}`);
     });
     fs.writeFileSync(path.join(projectName,'data',\`\${company}.csv\`), lines.join('\\n'));
     console.log(\`✔ \${company}.csv done (\${data.length} rows)\`);
