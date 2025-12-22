@@ -15,7 +15,7 @@ if (!fs.existsSync(projectName)) fs.mkdirSync(projectName);
 folders.forEach(f=>{
   const dir = path.join(projectName, f);
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-});
+
 
 // Create icon placeholders
 const icons = [
