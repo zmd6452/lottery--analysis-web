@@ -1,0 +1,13 @@
+{
+  "name": "malaysia-4d-interactive-generator",
+  "version": "1.0.0",
+  "main": "build-4d-interactive-full.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "node build-4d-interactive-full.js"
+  },
+  "dependencies": {
+    "archiver": "^6.0.0",
+    "node-fetch": "^2.6.7"
+  }
+}
