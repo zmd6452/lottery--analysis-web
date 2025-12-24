@@ -7,7 +7,10 @@
     "build": "node build-4d-interactive-full.js"
   },
   "dependencies": {
-    "archiver": "^6.0.0",
-    "node-fetch": "^2.6.7"
+  "node-cron": "^3.0.0",
+  "node-fetch": "^3.3.0",
+  "cheerio": "^1.0.0-rc.12",
+  "btoa": "^1.2.1"
+  
   }
 }
